@@ -5,7 +5,7 @@ import resume from '../../../public/resume.pdf';
 export default class About extends Component {
     render() {
         return (
-            <div class="mySection">
+            <div class="mySection ">
                 <div class="container">
                     <h1 class="display-3">ABOUT</h1>
                     <div class="row">

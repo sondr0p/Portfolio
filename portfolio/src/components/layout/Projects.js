@@ -7,7 +7,7 @@ import socal from '../../../public/socal.png';
 export default class Projects extends Component {
     render() {
         return (
-            <div class="mySection">
+            <div class="mySection ">
                 <div class="container">
                     <h1 class="display-3">Projects</h1>
                     <div class="row" style={{ marginTop: 20 }}>
