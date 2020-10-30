@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
 import selfie from '../../../public/selfie.jpg';
 import resume from '../../../public/resume.pdf';
+import twitter from '../../../public/twitter.png';
+import linkedin from '../../../public/linkedin.png';
+import github from '../../../public/github.png';
+import email from '../../../public/email.png';
 
 export default class About extends Component {
     render() {
         return (
-            <div class="mySection ">
-                <div class="container">
-                    <h1 class="display-3">ABOUT</h1>
-                    <div class="row">
-                        <div class="col-sm-4"><img class="img-fluid" src={selfie} alt="" /></div>
-                        <div class="col-sm-8">
-                            <p>
-                                Hello! My name is Sidney Tj Son.
+            <div className="nav-section">
+                <div className="container">
+                    <h1 className="sub-heading text-center">ABOUT</h1>
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <img className="about-selfie" src={selfie} alt="" />
+                            <ul className="about-social nav justify-content-center">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="https://twitter.com/sdnytj"><img className="about-icons" src={twitter} alt="" /></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="https://www.linkedin.com/in/sidneytjson"><img className="about-icons" src={linkedin} alt="" /></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="https://github.com/sondr0p"><img className="about-icons" src={github} alt="" /></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="mailto:sidneytjson@gmail.com"><img className="about-icons" src={email} alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-sm-8">
+                            <p className="about-desc">
                                 I am a full stack software engineer based in Granada Hills, CA.
                                 Recently, I have been using .NET or Django with React for web based work but fall back to Python for simpler
                                 projects.
