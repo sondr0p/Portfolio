@@ -14,7 +14,7 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div className="nav-section">
+            <div className="nav-section projects">
                 <div className="container">
                     <h1 className="sub-heading text-center">Projects</h1>
                     <div className="row">
