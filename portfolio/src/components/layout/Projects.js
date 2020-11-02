@@ -24,8 +24,13 @@ export default class Projects extends Component {
                                     <img src={blog} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
                                 <div className="card-back">
-                                    <h5 className="text-center">React Blog</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">React Blog</h5>
+                                    <p className="card-tech">React/Django-Rest-Framework</p>
+                                    <button type="button" className="mx-auto btn btn-outline-primary button-custom card-button">
+                                        <a href="https://github.com/sondr0p/Personal-Blog">
+                                            Github
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -35,8 +40,13 @@ export default class Projects extends Component {
                                     <img src={socal} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
                                 <div className="card-back">
-                                    <h5 className="text-center">Twitter Heatmap</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">Twitter Heatmap</h5>
+                                    <p className="card-tech">Python/Django</p>
+                                    <button type="button" className="mx-auto btn btn-outline-primary button-custom card-button">
+                                        <a href="https://github.com/sondr0p/TwitterHeatmap">
+                                            Github
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +58,13 @@ export default class Projects extends Component {
                                     <img src={cia} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
                                 <div className="card-back">
-                                    <h5 className="text-center">Web Crawler</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">Web Crawler</h5>
+                                    <p className="card-tech">Angular/Java</p>
+                                    <button type="button" className="mx-auto btn btn-outline-primary button-custom card-button">
+                                        <a href="https://github.com/sondr0p/WebSearch">
+                                            Github
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +74,13 @@ export default class Projects extends Component {
                                     <img src={game} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
                                 <div className="card-back">
-                                    <h5 className="text-center">Sunken Arena</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">Sunken Arena</h5>
+                                    <p className="card-tech">C#/Unity</p>
+                                    <button type="button" className="mx-auto btn btn-outline-primary button-custom card-button">
+                                        <a href="https://www.youtube.com/watch?v=f8As9Dfj9-U&feature=youtu.be&fbclid=IwAR0zkqtzIETlFqYWJZRDAfT9FdXNvNzv6FiaBCqkvCPZpBs1UvaarV-9p5o">
+                                            Github
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +92,13 @@ export default class Projects extends Component {
                                     <img src={chess} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
                                 <div className="card-back">
-                                    <h5 className="text-center">VR Chess</h5>
-                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 className="card-title">VR Chess</h5>
+                                    <p className="card-tech">C#/Unity</p>
+                                    <button type="button" className="mx-auto btn btn-outline-primary button-custom card-button">
+                                        <a href="https://github.com/sondr0p/ChessVR">
+                                            Github
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>

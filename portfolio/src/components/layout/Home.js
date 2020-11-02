@@ -42,16 +42,18 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="nav-section">
-                <div className="container">
-                    <div className="row home-heading">
-                        <div class="mx-auto text-center h2">
-                            <span className={this.state.cursorTop}>{this.state.textTop}</span> <br />
-                            <span className={this.state.cursorBot}>{this.state.textBot}</span>
+            <div>
+                <div className="container home-heading">
+                    <div className="home-content">
+                        <div className="row">
+                            <div className="mx-auto text-center h2">
+                                <span className={this.state.cursorTop}>{this.state.textTop}</span> <br />
+                                <span className={this.state.cursorBot}>{this.state.textBot}</span>
+                            </div>
                         </div>
-                    </div>
-                    <div className="row">
-                        {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom">Learn More</button>}
+                        <div className="row">
+                            {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom">Learn More</button>}
+                        </div>
                     </div>
                 </div>
             </div>
