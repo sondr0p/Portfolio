@@ -43,7 +43,7 @@ export default class Home extends Component {
     render() {
         const { changeSelection } = this.props;
         return (
-            <div className="home-heading">
+            <div className="home-heading" id="home">
                 <div className="container">
                     <div className="home-content">
                         <div className="row">

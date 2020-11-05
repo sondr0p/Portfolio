@@ -14,7 +14,7 @@
 .home-heading {
 	background-color: #000000;
 	position: relative;
-	height: 100vh;
+	height: 90vh;
 }
 .home-content {
 	background: inherit;
@@ -61,15 +61,22 @@
 
 
 /* NAV BAR */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 .navbar-custom
 {
-	background-color: #14213D;
-	color: #FCA311;
+	background-color: whitesmoke;
+	color: black;
+	height: 10vh;
 }
 .nav-button-custom {
 	border: 0;
-	background-color: #14213D;
-	color: #FCA311;
+	background-color: whitesmoke;
+	color: black;
 	outline: 0 !important;; 
 }
 
