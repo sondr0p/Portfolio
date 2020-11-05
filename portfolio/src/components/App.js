@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div>
         <div ref={this.Home}>
-          <Home />
+          <Home changeSelection={this.changeSelection} />
         </div>
         <Nav changeSelection={this.changeSelection} />
         <div ref={this.About}>

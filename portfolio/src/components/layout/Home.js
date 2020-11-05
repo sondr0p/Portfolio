@@ -41,18 +41,19 @@ export default class Home extends Component {
     };
 
     render() {
+        const { changeSelection } = this.props;
         return (
-            <div>
-                <div className="container home-heading">
+            <div className="home-heading">
+                <div className="container">
                     <div className="home-content">
                         <div className="row">
-                            <div className="mx-auto text-center h2">
+                            <div className="mx-auto text-center h2 home-text">
                                 <span className={this.state.cursorTop}>{this.state.textTop}</span> <br />
                                 <span className={this.state.cursorBot}>{this.state.textBot}</span>
                             </div>
                         </div>
                         <div className="row">
-                            {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom">Learn More</button>}
+                            {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom home-text" onClick={() => changeSelection(1)}>Learn More</button>}
                         </div>
                     </div>
                 </div>

@@ -1,39 +1,31 @@
-html { font-size: 1rem; }
-
-@media (min-width: 576px) {
-    html { font-size: 0.25rem; }
-}
-@media (min-width: 768px) {
-    html { font-size: 0.5rem; }
-}
-@media (min-width: 992px) {
-    html { font-size: 0.75rem; }
-}
-@media (min-width: 1200px) {
-    html { font-size: 1rem; }
-}
-
 .nav-section{
 	display: flex;
 	padding-top: 6rem;
 } 
 .sub-heading {
     position: relative;
-    bottom: 100px;
-	animation: slide-down 0.5s forwards;
+    right: 50vw;
+	animation: slide-right 1s forwards;
 	padding-bottom: 5rem;
 }
 
 
 /* HOME */
 .home-heading {
-  position: relative;
-  height: 100vh;
+	background-color: #000000;
+	position: relative;
+	height: 100vh;
 }
 .home-content {
+	background: inherit;
 	position: relative;
-  top: 40vh;
-
+	top: 40vh;
+	border-radius: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.home-text {
+	color: #FFFFFF;
 }
 .home-cursor {
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -68,36 +60,53 @@ html { font-size: 1rem; }
 }
 
 
+/* NAV BAR */
+.navbar-custom
+{
+	background-color: #14213D;
+	color: #FCA311;
+}
+.nav-button-custom {
+	border: 0;
+	background-color: #14213D;
+	color: #FCA311;
+	outline: 0 !important;; 
+}
+
 /* ABOUT */
+.about {
+	background-color: #FFFFFF;
+	color: #14213D;
+}
 .about-selfie {
     position: relative;
-    left: -100px;
+    left: -50vw;
     height: auto;
     width: 350px;
     margin: auto;
     border-radius: 50%;
-    animation: slide-left 0.5s forwards;
+    animation: slide-left 2s forwards;
     opacity: 0;
 }
 .about-social {
-    position: relative;
-    top: 100px;
+	position: relative;
+	left: -50vw;
     height: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
-    animation: slide-up 0.5s forwards;
+    animation: slide-left 2s forwards;
 }
 .about-icons {
     height: 2rem;
 }
 .about-icons:hover {
-    animation: enlarge-icon 0.5s forwards;
+    animation: enlarge-icon 0.0s forwards;
 }
 .about-desc {
     position: relative;
     padding: 50px;
-    right: -100px;
-    animation: slide-right 0.5s forwards;
+    right: -100vw;
+    animation: slide-right 3s forwards;
 }
 
 @keyframes enlarge-icon {
