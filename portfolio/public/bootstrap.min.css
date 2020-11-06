@@ -4,20 +4,26 @@
 } 
 .sub-heading {
     position: relative;
-    right: 50vw;
-	animation: slide-right 1s forwards;
+    transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	animation: slide-in 0.4s forwards;
+	-webkit-animation: slide-in 0.4s forwards;
+	opacity: 0;
 	padding-bottom: 5rem;
+}
+
+body {
+  font-family: Consolas, 'Courier New', monospace !important;
 }
 
 
 /* HOME */
 .home-heading {
-	background-color: #000000;
+	background-color: #1e1e1e;
 	position: relative;
-	height: 90vh;
+	height: 95vh;
 }
 .home-content {
-	background: inherit;
 	position: relative;
 	top: 40vh;
 	border-radius: 2px;
@@ -25,13 +31,13 @@
 	margin-right: auto;
 }
 .home-text {
-	color: #FFFFFF;
+	color: #588bab;
 }
 .home-cursor {
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .10em solid white; /* The typwriter cursor */
   letter-spacing: .15em; /* Adjust as needed */
-  animation: blink-caret .75s step-end infinite;
-  -webkit-animation: blink-caret .75s step-end infinite;
+  animation: blink-caret 1s step-end infinite;
+  -webkit-animation: blink-caret 1s step-end infinite;
 }
 .button-custom {
     opacity: 0;
@@ -40,11 +46,11 @@
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: white; }
 }
 @-webkit-keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: white; }
 }
 @keyframes fade-in {
     100% { opacity: 1.0 }
@@ -62,21 +68,21 @@
 
 /* NAV BAR */
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 2;
 }
 .navbar-custom
 {
-	background-color: whitesmoke;
-	color: black;
-	height: 10vh;
+	height: 5vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 .nav-button-custom {
 	border: 0;
-	background-color: whitesmoke;
-	color: black;
+	background-color: #252526;
+	color: white;
 	outline: 0 !important;; 
 }
 
@@ -87,21 +93,26 @@
 }
 .about-selfie {
     position: relative;
-    left: -50vw;
     height: auto;
     width: 350px;
     margin: auto;
     border-radius: 50%;
-    animation: slide-left 2s forwards;
+    transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	animation: slide-in 0.5s forwards;
+	-webkit-animation: slide-in 0.5s forwards;
     opacity: 0;
 }
 .about-social {
 	position: relative;
-	left: -50vw;
     height: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
-    animation: slide-left 2s forwards;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	animation: slide-in 0.8s forwards;
+	-webkit-animation: slide-in 0.8s forwards;
+	opacity: 0;
 }
 .about-icons {
     height: 2rem;
@@ -112,24 +123,21 @@
 .about-desc {
     position: relative;
     padding: 50px;
-    right: -100vw;
-    animation: slide-right 3s forwards;
+    transform: translateX(50%);
+	-webkit-transform: translateX(50%);
+	animation: slide-in 1s forwards;
+	-webkit-animation: slide-in 1s forwards;
+	opacity: 0;
 }
 
 @keyframes enlarge-icon {
     100% { opacity: 0.5}
 }
-@keyframes slide-up {
-    100% { top: 0; opacity: 1.0 }
+@keyframes slide-in {
+    100% { transform: translateX(0%); opacity: 100% }
 }
-@keyframes slide-down {
-    100% { bottom: 0; opacity: 1.0 }
-}
-@keyframes slide-left {
-    100% { left: 0; opacity: 1.0 }
-}
-@keyframes slide-right {
-    100% { right: 0; opacity: 1.0 }
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); opacity: 100% }
 }
 
 /* PROJECTS */
@@ -137,8 +145,8 @@
 	background-color: whitesmoke;
 }
 .card-custom {
-    margin-bottom: 4rem;
-    width: 24rem;
+    margin-bottom: 5%;
+    width: 80%;
     height: auto;
     margin-left: auto;
 	margin-right: auto;
@@ -160,11 +168,33 @@
     animation: fade-in 0.5s forwards;
     -webkit-animation: fade-in 0.5s forwards;
 }
-.card-title, .card-tech {
+.card-title {
+	padding-top: 2rem;
+}
+.card-tech {
+	font-size: 0.9rem;
     margin: auto;
 }
 .card-button {
-    margin: auto;
+	margin-top: 10%;
+}
+
+/* CONTACT */
+.contact {
+	height: 95vh;
+}
+.contact-form {
+	width: 70%;
+	margin: auto;
+}
+.contact-message {
+	height: 30vh;
+}
+
+/* FOOTER */
+.footer {
+	background-color: whitesmoke;
+	height: 5vh;
 }
 
 /*!
@@ -2279,7 +2309,6 @@ pre code {
 .form-control {
 	display: block;
 	width: 100%;
-	height: calc(1.5em + .75rem + 2px);
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	font-weight: 400;
@@ -2430,7 +2459,7 @@ select.form-control[size] {
 }
 
 textarea.form-control {
-	height: auto
+	height: 20vh;
 }
 
 .form-group {
@@ -5199,7 +5228,7 @@ input[type=submit].btn-block {
 }
 
 .card-title {
-	margin-bottom: .75rem
+	margin-bottom: 0
 }
 
 .card-subtitle {
@@ -7271,7 +7300,7 @@ button.bg-danger:hover {
 }
 
 .bg-light {
-	background-color: #f8f9fa!important
+	background-color: #252526!important
 }
 
 a.bg-light:focus,

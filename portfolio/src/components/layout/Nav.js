@@ -47,11 +47,11 @@ export default class Nav extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className={"collapse navbar-collapse " + show}>
-                        <div className="navbar-nav mr-auto">
-                            <button type="button" className="nav-item" onClick={() => changeSelection(0)}>Home</button>
-                            <button type="button" className="nav-item" onClick={() => changeSelection(1)}>About</button>
-                            <button type="button" className="nav-item" onClick={() => changeSelection(2)}>Projects</button>
-                            <button type="button" className="nav-item" onClick={() => changeSelection(3)}>Contact</button>
+                        <div className="navbar-nav navbar-custom">
+                            <button type="button" className="nav-button-custom" onClick={() => changeSelection(0)}><h5>Home</h5></button>
+                            <button type="button" className="nav-button-custom" onClick={() => changeSelection(1)}><h5>About</h5></button>
+                            <button type="button" className="nav-button-custom" onClick={() => changeSelection(2)}><h5>Projects</h5></button>
+                            <button type="button" className="nav-button-custom" onClick={() => changeSelection(3)}><h5>Contact</h5></button>
                         </div>
                     </div>
                 </nav>

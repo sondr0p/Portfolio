@@ -4,6 +4,7 @@ import Nav from './layout/Nav';
 import About from './layout/About';
 import Projects from './layout/Projects';
 import Contact from './layout/Contact';
+import Footer from './layout/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class App extends Component {
         <div ref={this.Contact}>
           <Contact />
         </div>
+        <Footer />
       </div>
     );
   }
