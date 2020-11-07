@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 
 export default class Contact extends Component {
+    state = {
+        result: ''
+    }
+
     sendEmail = (e) => {
         e.preventDefault();
-        console.log(process.env.REACT_APP_EMAIL_JS_SERVICEID, process.env.REACT_APP_EMAIL_JS_TEMPLATEID, process.env.REACT_APP_EMAIL_JS_USERID);
         emailjs.sendForm(process.env.REACT_APP_EMAIL_JS_SERVICEID, process.env.REACT_APP_EMAIL_JS_TEMPLATEID, e.target, process.env.REACT_APP_EMAIL_JS_USERID)
             .then((result) => {
+                this.state.result = "Email Sent!";
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -33,6 +37,7 @@ export default class Contact extends Component {
                             <button className="btn btn-primary" type="submit" value="Send">Submit</button>
                         </form>
                     </div>
+                    <p>{this.state.result}</p>
                 </div>
             </div>
         )
