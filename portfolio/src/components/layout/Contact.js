@@ -10,7 +10,7 @@ export default class Contact extends Component {
         e.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_EMAIL_JS_SERVICEID, process.env.REACT_APP_EMAIL_JS_TEMPLATEID, e.target, process.env.REACT_APP_EMAIL_JS_USERID)
             .then((result) => {
-                this.state.result = "Email Sent!";
+                this.setState({ result: "Email sent." });
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -36,8 +36,9 @@ export default class Contact extends Component {
                             </div>
                             <button className="btn btn-primary" type="submit" value="Send">Submit</button>
                         </form>
+                        <p>{this.state.result}</p>
                     </div>
-                    <p>{this.state.result}</p>
+
                 </div>
             </div>
         )
