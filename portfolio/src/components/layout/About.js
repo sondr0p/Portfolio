@@ -12,7 +12,7 @@ export default class About extends Component {
             <div className="about">
                 <div className="nav-section">
                     <div className="container">
-                        <h1 className="sub-heading text-center">ABOUT</h1>
+                        <h1 className="sub-heading text-center">About</h1>
                         <div className="row">
                             <div className="col-sm-4">
                                 <img className="about-selfie" src={selfie} alt="" />
