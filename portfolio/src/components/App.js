@@ -5,6 +5,7 @@ import About from './layout/About';
 import Projects from './layout/Projects';
 import Contact from './layout/Contact';
 import Footer from './layout/Footer';
+import 'particles.js/particles';
 
 class App extends Component {
   constructor(props) {
@@ -24,6 +25,11 @@ class App extends Component {
       selected: index
     });
   };
+
+  componentDidMount() {
+    // particle animation background
+    window.particlesJS.load('home', '/assets/particles.json', null);
+  }
 
   componentDidUpdate(prevProps, prevState) {
     this.scrollToSection(this.state.selected);

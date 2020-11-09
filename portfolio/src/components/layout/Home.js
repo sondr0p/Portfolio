@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Home extends Component {
     state = {
         fullTextTop: "Hello, I'm Sidney Tj Son.",
-        fullTextBot: "I'm a full-stack software engineer.",
+        fullTextBot: "I'm a software engineer.",
         textTop: '',
         textBot: '',
         typingSpeed: 150,
@@ -42,6 +42,7 @@ export default class Home extends Component {
 
     render() {
         const { changeSelection } = this.props;
+
         return (
             <div className="home-heading" id="home">
                 <div className="container">

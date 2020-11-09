@@ -22,9 +22,9 @@ export default class Contact extends Component {
             <div className="nav-section contact">
                 <div className="container">
                     <h1 className="sub-heading text-center">Contact</h1>
-                    <h5 className="text-center">Have a question or want to work together?</h5>
                     <div className="container">
                         <form className="contact-form" onSubmit={this.sendEmail}>
+                            <h5 className="text-center">Have a question or want to work together?</h5>
                             <div className="form-group">
                                 <input className="form-control" type="text" placeholder="Name" name="from_name" />
                             </div>
