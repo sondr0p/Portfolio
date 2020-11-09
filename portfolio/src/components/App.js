@@ -36,7 +36,8 @@ class App extends Component {
     // scrolling animations
     AOS.init({
       offset: 400,
-      duration: 1000
+      duration: 1000,
+      disable: 'mobile'
     });
   }
 
