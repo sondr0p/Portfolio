@@ -21,20 +21,20 @@ export default class Contact extends Component {
         return (
             <div className="nav-section contact">
                 <div className="container">
-                    <h1 className="sub-heading text-center">Contact</h1>
+                    <h1 className="sub-heading text-center" data-aos="fade-right">Contact</h1>
                     <div className="container">
                         <form className="contact-form" onSubmit={this.sendEmail}>
-                            <h5 className="text-center">Have a question or want to work together?</h5>
-                            <div className="form-group">
+                            <h5 className="text-center" data-aos="zoom-in">Have a question or want to work together?</h5>
+                            <div className="form-group" data-aos="zoom-in">
                                 <input className="form-control" type="text" placeholder="Name" name="from_name" />
                             </div>
-                            <div className="form-group">
+                            <div className="form-group" data-aos="zoom-in">
                                 <input className="form-control" type="email" placeholder="Enter email" name="from_email" />
                             </div>
-                            <div className="form-group">
+                            <div className="form-group" data-aos="zoom-in">
                                 <textarea className="form-control contact-message" placeholder="Your message" name="message" />
                             </div>
-                            <button className="btn btn-primary" type="submit" value="Send">Submit</button>
+                            <button className="btn btn-primary" type="submit" value="Send" data-aos="zoom-in">Submit</button>
                         </form>
                         <p>{this.state.result}</p>
                     </div>

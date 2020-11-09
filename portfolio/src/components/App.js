@@ -6,6 +6,8 @@ import Projects from './layout/Projects';
 import Contact from './layout/Contact';
 import Footer from './layout/Footer';
 import 'particles.js/particles';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +16,8 @@ class App extends Component {
       selected: null
     };
   }
-  //refs
+
+  //refs for nav bar
   Home = React.createRef();
   About = React.createRef();
   Projects = React.createRef();
@@ -29,6 +32,12 @@ class App extends Component {
   componentDidMount() {
     // particle animation background
     window.particlesJS.load('home', '/assets/particles.json', null);
+
+    // scrolling animations
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -50,6 +59,7 @@ class App extends Component {
       });
     }
   };
+
   render() {
     return (
       <div>

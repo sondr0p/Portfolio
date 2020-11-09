@@ -16,10 +16,10 @@ export default class Projects extends Component {
         return (
             <div className="nav-section projects">
                 <div className="container">
-                    <h1 className="sub-heading text-center">Projects</h1>
+                    <h1 className="sub-heading text-center" data-aos="fade-right">Projects</h1>
                     <div className="row">
                         <div className="col-sm-6">
-                            <div className="card card-custom text-center shadow">
+                            <div className="card card-custom text-center shadow" data-aos="flip-right">
                                 <div className="card-front">
                                     <img src={blog} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
@@ -37,7 +37,7 @@ export default class Projects extends Component {
                             </div>
                         </div>
                         <div className="col-sm-6">
-                            <div className="card card-custom text-center shadow">
+                            <div className="card card-custom text-center shadow" data-aos="flip-right">
                                 <div className="card-front">
                                     <img src={socal} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
@@ -57,7 +57,7 @@ export default class Projects extends Component {
                     </div>
                     <div className="row">
                         <div className="col-sm-6">
-                            <div className="card card-custom text-center shadow">
+                            <div className="card card-custom text-center shadow" data-aos="flip-right">
                                 <div className="card-front">
                                     <img src={cia} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
@@ -75,7 +75,7 @@ export default class Projects extends Component {
                             </div>
                         </div>
                         <div className="col-sm-6">
-                            <div className="card card-custom text-center shadow">
+                            <div className="card card-custom text-center shadow" data-aos="flip-right">
                                 <div className="card-front">
                                     <img src={game} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
@@ -95,7 +95,7 @@ export default class Projects extends Component {
                     </div>
                     <div className="row">
                         <div className="col-sm-6">
-                            <div className="card card-custom text-center shadow">
+                            <div className="card card-custom text-center shadow" data-aos="flip-right">
                                 <div className="card-front">
                                     <img src={chess} className="card-img-top card-image-custom" alt="..."></img>
                                 </div>
