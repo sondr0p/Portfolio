@@ -54,7 +54,7 @@ body {
  	backdrop-filter: blur(6px);
 }
 .home-text {
-	color: #588bab;
+	color: white;
 }
 .home-cursor {
   border-right: .10em solid white; /* The typwriter cursor */
@@ -119,7 +119,7 @@ body {
 .about-tech-icons {
     margin-left: 1rem;
     margin-right: 1rem;
-    height: 6rem;
+    height: 10vh;
 }
 .about-desc {
     position: relative;
@@ -185,4 +185,8 @@ body {
 .footer {
 	background-color: whitesmoke;
 	height: 5vh;
+}
+
+.footer-text {
+    padding-top: 1rem;
 }

@@ -54,7 +54,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom home-text" onClick={() => changeSelection(1)}>Learn More</button>}
+                            {this.state.showButton && <button type="button" className="mx-auto btn btn-outline-primary button-custom" onClick={() => changeSelection(1)}>Learn More</button>}
                         </div>
                     </div>
                 </div>

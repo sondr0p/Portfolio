@@ -12,6 +12,7 @@ import sql from '../../../public/sql.png';
 import dotnet from '../../../public/dotnet.png';
 import django from '../../../public/django.png';
 import react from '../../../public/react.png';
+import java from '../../../public/java.png';
 
 export default class About extends Component {
     render() {
@@ -38,42 +39,48 @@ export default class About extends Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-sm-8" data-aos="fade-left">
-                                <p className="about-desc">
+                            <div className="col-sm-8">
+                                <p className="about-desc" data-aos="fade-left" data-aos-delay="100">
                                     {">"} I am a full stack software engineer based in Los Angeles, CA.
                                 </p>
-                                <p className="about-desc">
+                                <p className="about-desc" data-aos="fade-left" data-aos-delay="150">
+                                    {">"} Currently I work for <a href="https://pinnacletreatment.com/">Pinnacle Treatment Centers</a>, on their electronic health record system (EHR).
+                                </p>
+                                <p className="about-desc" data-aos="fade-left" data-aos-delay="200">
                                     {">"} Outside of coding, some my interests include working out, following the NBA/NFL, or going out to try new places to eat.
                                 </p>
-                                <p className="about-desc">
+                                <p className="about-desc" data-aos="fade-left" data-aos-delay="250">
                                     {">"} If you would like to contact me, feel free to send me an email or give me a call with the number given on my <a href={resume}>resume</a>.
                                 </p>
 
-                                <h5 className="text-center">Frameworks/Technologies I've used</h5>
+                                <h5 className="text-center" data-aos="fade-left" data-aos-delay="400">Frameworks/Technologies I've used</h5>
                                 <ul className="about-tech nav justify-content-center">
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="500">
                                         <img className="about-tech-icons" src={dotnet} alt="" />
                                     </li>
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="600">
                                         <img className="about-tech-icons" src={react} alt="" />
                                     </li>
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="700">
                                         <img className="about-tech-icons" src={django} alt="" />
                                     </li>
                                 </ul>
-                                <h5 className="text-center">Languages I've used</h5>
+                                <h5 className="text-center" data-aos="fade-left" data-aos-delay="400">Languages I've used</h5>
                                 <ul className="about-tech nav justify-content-center">
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="500">
                                         <img className="about-tech-icons" src={csharp} alt="" />
                                     </li>
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="550">
                                         <img className="about-tech-icons" src={python} alt="" />
                                     </li>
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="600">
                                         <img className="about-tech-icons" src={javascript} alt="" />
                                     </li>
-                                    <li>
+                                    <li data-aos="flip-up" data-aos-delay="650">
                                         <img className="about-tech-icons" src={sql} alt="" />
+                                    </li>
+                                    <li data-aos="flip-up" data-aos-delay="700">
+                                        <img className="about-tech-icons" src={java} alt="" />
                                     </li>
                                 </ul>
                             </div>
