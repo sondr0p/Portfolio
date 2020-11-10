@@ -47,7 +47,7 @@ export default class About extends Component {
                                     {">"} Currently I work for <a href="https://pinnacletreatment.com/">Pinnacle Treatment Centers</a>, on their electronic health record system (EHR).
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="200">
-                                    {">"} Outside of coding, some my interests include working out, following the NBA/NFL, or going out to try new places to eat.
+                                    {">"} Outside of coding, some my interests include working out, following the NBA and NFL, or trying new places to eat.
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="250">
                                     {">"} If you would like to contact me, feel free to send me an email or give me a call with the number given on my <a href={resume}>resume</a>.
