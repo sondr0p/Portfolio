@@ -111,9 +111,18 @@ body {
 .about-icons {
     height: 2rem;
 }
+.about-tech {
+    position: relative;
+    height: 150px;
+    padding-top: 30px;
+}
+.about-tech-icons {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 6rem;
+}
 .about-desc {
     position: relative;
-    padding: 50px;
 }
 
 
