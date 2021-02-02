@@ -43,7 +43,7 @@ export default class Projects extends Component {
                                 </div>
                                 <div className="card-back align-self-center">
                                     <h5 className="card-title">Twitter Heatmap</h5>
-                                    <p className="card-tech">Python/Django</p>
+                                    <p className="card-tech">Python</p>
                                     <button type="button" className="btn btn-outline-primary button-custom card-button"
                                         onClick={(e) => {
                                             e.preventDefault();
