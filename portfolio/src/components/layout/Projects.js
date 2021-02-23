@@ -47,7 +47,7 @@ export default class Projects extends Component {
                                     <button type="button" className="btn btn-outline-primary button-custom card-button"
                                         onClick={(e) => {
                                             e.preventDefault();
-                                            window.location.href = 'https://github.com/sondr0p/TwitterHeatmap';
+                                            window.location.href = 'https://github.com/sondr0p/TweetDjango';
                                         }}>
                                         Github
                                     </button>
