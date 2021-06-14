@@ -44,7 +44,10 @@ export default class About extends Component {
                                     {">"} I am a full stack software engineer based in Los Angeles, CA.
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="150">
-                                    {">"} Currently I work for <a href="https://pinnacletreatment.com/">Pinnacle Treatment Centers</a>, on their electronic health record system (EHR).
+                                    {">"} Currently I am a Software Engineer II – Data Engineering and Reporting at <a href="https://www.xandr.com/">Xandr</a>.
+                                </p>
+                                <p className="about-desc" data-aos="fade-left" data-aos-delay="150">
+                                    {">"} Previously I worked for <a href="https://pinnacletreatment.com/">Pinnacle Treatment Centers</a>, as a Software Developer on their electronic health record system (EHR).
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="200">
                                     {">"} Outside of coding, some my interests include working out, following the NBA and NFL, or trying new places to eat.
