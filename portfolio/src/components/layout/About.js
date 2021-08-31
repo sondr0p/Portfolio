@@ -13,6 +13,7 @@ import dotnet from '../../../public/dotnet.png';
 import django from '../../../public/django.png';
 import react from '../../../public/react.png';
 import java from '../../../public/java.png';
+import hadoop from '../../../public/hadoop.png';
 
 export default class About extends Component {
     render() {
@@ -44,7 +45,7 @@ export default class About extends Component {
                                     {">"} I am a full stack software engineer based in Los Angeles, CA.
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="150">
-                                    {">"} Currently I am a Software Engineer II – Data Engineering and Reporting at <a href="https://www.xandr.com/">Xandr</a>.
+                                    {">"} My current position is Software Engineer II – Data Engineering and Reporting at <a href="https://www.xandr.com/">Xandr</a>.
                                 </p>
                                 <p className="about-desc" data-aos="fade-left" data-aos-delay="150">
                                     {">"} Previously I worked for <a href="https://pinnacletreatment.com/">Pinnacle Treatment Centers</a>, as a Software Developer on their electronic health record system (EHR).
@@ -61,11 +62,14 @@ export default class About extends Component {
                                     <li data-aos="flip-up" data-aos-delay="500">
                                         <img className="about-tech-icons" src={dotnet} alt="" />
                                     </li>
-                                    <li data-aos="flip-up" data-aos-delay="600">
+                                    <li data-aos="flip-up" data-aos-delay="550">
                                         <img className="about-tech-icons" src={react} alt="" />
                                     </li>
-                                    <li data-aos="flip-up" data-aos-delay="700">
+                                    <li data-aos="flip-up" data-aos-delay="650">
                                         <img className="about-tech-icons" src={django} alt="" />
+                                    </li>
+                                    <li data-aos="flip-up" data-aos-delay="700">
+                                        <img className="about-tech-icons" src={hadoop} alt="" />
                                     </li>
                                 </ul>
                                 <h5 className="text-center" data-aos="fade-left" data-aos-delay="400">Languages I've used</h5>
