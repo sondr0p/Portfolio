@@ -24,7 +24,12 @@ export default class About extends Component {
                         <h1 className="sub-heading text-center" data-aos="fade-right">About</h1>
                         <div className="row">
                             <div className="col-sm-4" data-aos="fade-right">
-                                <img className="about-selfie" src={selfie} alt="" />
+                                <ul className="nav justify-content-center">
+                                    <li>
+                                        <img className="about-selfie" src={selfie} alt="" />
+                                    </li>
+                                </ul>
+
                                 <ul className="about-social nav justify-content-center">
                                     <li className="nav-item">
                                         <a className="nav-link" href="https://twitter.com/sdnytj"><img className="about-icons" src={twitter} alt="" /></a>
@@ -63,13 +68,13 @@ export default class About extends Component {
                                         <img className="about-tech-icons" src={dotnet} alt="" />
                                     </li>
                                     <li data-aos="flip-up" data-aos-delay="550">
-                                        <img className="about-tech-icons" src={react} alt="" />
+                                        <img className="about-tech-icons" src={hadoop} alt="" />
                                     </li>
                                     <li data-aos="flip-up" data-aos-delay="650">
-                                        <img className="about-tech-icons" src={django} alt="" />
+                                        <img className="about-tech-icons" src={react} alt="" />
                                     </li>
                                     <li data-aos="flip-up" data-aos-delay="700">
-                                        <img className="about-tech-icons" src={hadoop} alt="" />
+                                        <img className="about-tech-icons" src={django} alt="" />
                                     </li>
                                 </ul>
                                 <h5 className="text-center" data-aos="fade-left" data-aos-delay="400">Languages I've used</h5>
@@ -78,16 +83,16 @@ export default class About extends Component {
                                         <img className="about-tech-icons" src={csharp} alt="" />
                                     </li>
                                     <li data-aos="flip-up" data-aos-delay="550">
-                                        <img className="about-tech-icons" src={python} alt="" />
+                                        <img className="about-tech-icons" src={java} alt="" />
                                     </li>
                                     <li data-aos="flip-up" data-aos-delay="600">
-                                        <img className="about-tech-icons" src={javascript} alt="" />
-                                    </li>
-                                    <li data-aos="flip-up" data-aos-delay="650">
                                         <img className="about-tech-icons" src={sql} alt="" />
                                     </li>
+                                    <li data-aos="flip-up" data-aos-delay="650">
+                                        <img className="about-tech-icons" src={javascript} alt="" />
+                                    </li>
                                     <li data-aos="flip-up" data-aos-delay="700">
-                                        <img className="about-tech-icons" src={java} alt="" />
+                                        <img className="about-tech-icons" src={python} alt="" />
                                     </li>
                                 </ul>
                             </div>

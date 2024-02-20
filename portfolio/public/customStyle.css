@@ -36,10 +36,7 @@ body {
 
 /* HOME */
 .home-heading {
-	background: url('./splash.jpeg'); 
-	background-repeat: no-repeat;
-  	background-size: cover;
-	position: relative;
+	background-color: #1e1e1e; 
 	height: 95vh;
 }
 .home-content {
@@ -49,9 +46,6 @@ body {
 	top: 33%;
     left: 30%;
 	padding-top: 50px;
-	border-radius: 2px;
-	background-color: rgba(255, 255, 255, .15);  
- 	backdrop-filter: blur(6px);
 }
 .home-text {
 	color: white;
@@ -98,8 +92,7 @@ body {
 .about-selfie {
     position: relative;
     height: auto;
-    width: 350px;
-    margin: auto;
+    width: 16rem;
 	border-radius: 50%;
 }
 .about-social {
@@ -183,10 +176,7 @@ body {
 
 /* FOOTER */
 .footer {
-	background-color: whitesmoke;
+	background-color: #1e1e1e;
+    color: white;
 	height: 5vh;
-}
-
-.footer-text {
-    padding-top: 1rem;
 }
